@@ -277,14 +277,15 @@ svg rect {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  background: -webkit-linear-gradient(342.4deg, #860162 5.38%, #190051 103.23%);
-  background: -o-linear-gradient(342.4deg, #860162 5.38%, #190051 103.23%);
-  background: linear-gradient(107.6deg, #860162 5.38%, #190051 103.23%);
+  background: url("../../images/system_img/desktop-1/bg-vectors.svg") right -150px/cover no-repeat, -webkit-linear-gradient(342.4deg, #860162 5.38%, #190051 103.23%);
+  background: url("../../images/system_img/desktop-1/bg-vectors.svg") right -150px/cover no-repeat, -o-linear-gradient(342.4deg, #860162 5.38%, #190051 103.23%);
+  background: url("../../images/system_img/desktop-1/bg-vectors.svg") right -150px/cover no-repeat, linear-gradient(107.6deg, #860162 5.38%, #190051 103.23%);
   border-bottom-left-radius: 110px;
   border-bottom-right-radius: 110px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -294,6 +295,18 @@ svg rect {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.top__circles {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10%;
+}
+
+.top__circles img {
+  max-width: 100%;
+  opacity: 0.4;
 }
 
 .top__logo {

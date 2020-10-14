@@ -80,16 +80,30 @@ svg {
 }
 .top {
 	flex: 1 1 auto;
-	background: linear-gradient(107.6deg, #860162 5.38%, #190051 103.23%);
+	background: url("../../images/system_img/desktop-1/bg-vectors.svg") right -150px / cover no-repeat,
+		linear-gradient(107.6deg, #860162 5.38%, #190051 103.23%);
 	border-bottom-left-radius: 110px;
 	border-bottom-right-radius: 110px;
 
 	display: flex;
+	position: relative;
 
 	@media (max-width: $xs) {
 		flex-direction: column;
 	}
 
+	&__circles {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		width: 10%;
+
+		img {
+			max-width: 100%;
+			opacity: 0.4;
+		}
+	}
 	&__logo {
 		flex: 0 0 20vw;
 		background: url("../../images/system_img/desktop-1/bg-circles.svg") center / cover no-repeat;
