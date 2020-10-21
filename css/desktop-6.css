@@ -321,6 +321,12 @@ svg rect {
   position: relative;
 }
 
+@media (max-width: 400px) {
+  .top {
+    padding: 7vh 5px 10vh 5px;
+  }
+}
+
 .top__info {
   width: 50%;
 }
@@ -349,6 +355,12 @@ svg rect {
 @media (max-width: 1199px) {
   .photos {
     padding: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .photos {
+    padding: 15px 0;
   }
 }
 
@@ -474,9 +486,7 @@ svg rect {
 
 @media (max-width: 400px) {
   .photos__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+    width: 100%;
   }
 }
 
@@ -620,6 +630,15 @@ svg rect {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .row-main {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 

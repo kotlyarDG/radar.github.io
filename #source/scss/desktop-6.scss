@@ -91,6 +91,10 @@ svg {
 	padding: 7vh 10vw 5vh 10vw;
 	position: relative;
 
+	@media (max-width: 400px) {
+		padding: 7vh 5px 10vh 5px;
+	}
+
 	&__info {
 		width: 50%;
 
@@ -123,6 +127,10 @@ svg {
 
 	@media (max-width: $md) {
 		padding: 15px;
+	}
+
+	@media (max-width: 400px) {
+		padding: 15px 0;
 	}
 
 	&__row {
@@ -216,8 +224,8 @@ svg {
 		}
 
 		@media (max-width: 400px) {
-			flex: 0 1 100%;
-			// height: auto;
+			// flex: 0 1 100%;
+			width: 100%;
 		}
 	}
 
@@ -353,6 +361,13 @@ svg {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+
+	@media (max-width: 400px) {
+		display: block;
+		width: 300px;
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 
 .form {
@@ -449,11 +464,6 @@ svg {
 	img {
 		max-height: 100%;
 	}
-
-	// @media (max-width: $md) {
-	// 	transform: translate(75px, -35%);
-	// 	position: fixed;
-	// }
 
 	@media (max-width: $md) {
 		position: fixed;
