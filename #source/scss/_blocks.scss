@@ -93,6 +93,14 @@
 		svg {
 			max-width: 100%;
 		}
+
+		&:hover {
+			svg {
+				animation-name: nav-an;
+				animation-duration: 0.8s;
+				animation-timing-function: linear;
+			}
+		}
 	}
 
 	&__text {
@@ -113,5 +121,17 @@
 				fill: #fff;
 			}
 		}
+	}
+}
+
+@keyframes nav-an {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }
