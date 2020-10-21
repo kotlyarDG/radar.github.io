@@ -450,9 +450,16 @@ svg {
 		max-height: 100%;
 	}
 
+	// @media (max-width: $md) {
+	// 	transform: translate(75px, -35%);
+	// 	position: fixed;
+	// }
+
 	@media (max-width: $md) {
-		transform: translate(75px, -35%);
 		position: fixed;
+		top: 0;
+		right: -55px;
+		transform: translate(0, 0);
 	}
 }
 
